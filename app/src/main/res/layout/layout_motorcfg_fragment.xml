@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/spinnerBlock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/eighty_dp">
+
+            <Spinner
+                android:id="@+id/selectSpinner1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/thirty_dp"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginRight="@dimen/thirty_dp"
+                android:background="@color/grey1"></Spinner>
+
+
+            <Spinner
+                android:id="@+id/selectSpinner2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_dp"
+                android:layout_below="@id/selectSpinner1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/thirty_dp"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginRight="@dimen/thirty_dp"
+                android:background="@color/grey1"></Spinner>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerBlock"
+            android:layout_marginLeft="@dimen/twenty_dp"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:layout_marginRight="@dimen/twenty_dp"
+            android:background="@drawable/rec_gradiant">
+
+            <TextView
+                android:id="@+id/sensorlessErpm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Sensorless ERPM"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/minusSensor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sensorlessErpm"
+                android:padding="@dimen/ten_dp"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="@dimen/forty_dp" />
+
+            <TextView
+                android:id="@+id/plusSensor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sensorlessErpm"
+                android:layout_alignParentRight="true"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="@dimen/forty_dp"
+                android:layout_alignBaseline="@+id/minusSensor"
+
+                />
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="2dp"
+               android:layout_below="@id/minusSensor"
+               android:background="@color/white"
+               android:layout_marginTop="@dimen/ten_dp"
+               />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

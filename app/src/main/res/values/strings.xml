@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">VESCTool</string>
+
+    <string-array name="SelectService">
+        <item>General</item>
+        <item>BLDC</item>
+        <item>DC</item>
+        <item>FOC</item>
+        <item>GPD</item>
+        <item>PID Controllers</item>
+        <item>Additional Info</item>
+    </string-array>
+
+    <string-array name="SelectServices2">
+        <item>General</item>
+        <item>FOC</item>
+        <item>Sensories</item>
+        <item>Hall Sensors</item>
+        <item>Encoder</item>
+        <item>HFI</item>
+        <item>Advanced</item>
+    </string-array>
+
+
+</resources>
